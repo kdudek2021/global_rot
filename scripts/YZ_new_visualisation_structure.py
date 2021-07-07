@@ -75,11 +75,6 @@ class XY_Visualisation_mag_moments_entire_structure():
         lc_current_rot = mc.LineCollection(lines_current_rot, linewidths = 1, color = 'red')        
         #lc_vec = mc.LineCollection(lines_mag_vectors, linewidths = 2, color = 'red')
         
-        #plt.axis('equal')
-        #plt.axis([-0.05, 0.15, -0.05, 0.1])
-        #plt.axes([-0.5, -0.5, 1.0, 1.0])
-        #ax = plt.axes([0., 0., 1., 1.])
-        
         ax = plt.gca()		#I move both xticks abd yticks away from the graph
         ax.set_aspect('equal')
         
@@ -94,7 +89,6 @@ class XY_Visualisation_mag_moments_entire_structure():
         #ax.add_collection(lc_vec)
         #plt.show()
         plt.savefig("structure_XY_at_t = "+str(self.i_time)+".png") 
-        #plt.savefig("structure_XY_at_t = "+str(self.i_time)+".svg") 
 
 
 
